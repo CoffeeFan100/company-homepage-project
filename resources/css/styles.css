@@ -83,6 +83,7 @@ a:hover {
 a {
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .bubble {
@@ -108,22 +109,46 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    flex-direction: column;
+    border-bottom: 2px solid black;
 }
 
 .banner .content {
-    margin: auto;
+    margin: 225px auto 0px auto;
     background-color: white;
     width: 100%;
     min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
 }
 
 .content h2 {
     font-size: 34px;
+    padding: 20px;
 }
 
 .content h4 {
     color: red;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+.banner .banner-bubble {
+    background-color: green;
+    border-radius: 30px;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 75px;
+    border: 2px solid black;
+}
+
+.banner-bubble p {
+    color: white;
+    font-size: 17px;
 }
 
 .toggle-button {
@@ -144,6 +169,76 @@ a {
     border-radius: 10px;
 }
 
+/* Services Section */
+
+#services .content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 30px;
+}
+
+#services .content h2 {
+    font-size: 40px;
+}
+
+#services .content h4 {
+    padding: 0px;
+}
+
+#services {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/services-picture.jpg);
+    display: flex;
+    height: 1100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+}
+
+.services-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 32px 72px 32px 72px;
+}
+
+.service {
+    background-color: black;
+    width: 26%;
+    margin: 32px;
+    transition: all 200ms ease-in-out 0.1s;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+}
+
+.service-information {
+    padding: 16px 16px 24px 16px;
+}
+
+#services h3 {
+    margin: 4px 0 0 0;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+.service-detail {
+    font-size: 16px;
+    color: red;
+}
+
+.service:hover {
+    background-color: black;
+    transform: scale(1.075);
+}
+
 /* Mobile Styles */
 
 @media screen and (max-width: 600px) {
@@ -159,8 +254,40 @@ a {
         padding: 10px 0px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .banner .content {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1261px) {
+    .logo img {
+        min-width: 110px;
+        max-height: 100px;
+        margin: auto 10px;
+    }
+
+    .bubble {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin: 20px 15px;
+        width: 150px;
+        height: auto;
+        align-self: center;
+    }
+
+    .navbar-links {
+        width: 65%;
+    }
+
+    .logo {
+        padding: 10px 0px;
+    }
+}
   
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .toggle-button {
         display: flex;
     }
@@ -198,6 +325,16 @@ a {
         padding: 0px;
         margin: 20px 20px;
         width: 150px;
+        height: auto;
+        align-self: center;
+    }
+
+    .banner .banner-bubble {
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin: 65px 0px;
+        width: 180px;
         height: auto;
         align-self: center;
     }
