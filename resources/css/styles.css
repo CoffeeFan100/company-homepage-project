@@ -190,7 +190,7 @@ a {
 #services {
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/services-picture.jpg);
     display: flex;
-    height: 1100px;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,7 +215,12 @@ a {
 
 .service img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-image {
+    display: flex;
 }
 
 .service-information {
@@ -227,6 +232,8 @@ a {
     font-weight: bolder;
     font-size: 20px;
     color: white;
+    border-bottom: 4px solid lightgreen;
+    padding-bottom: 10px;
 }
 
 .service-detail {
@@ -237,6 +244,32 @@ a {
 .service:hover {
     background-color: black;
     transform: scale(1.075);
+}
+
+.photo-detail {
+    color: white;
+    font-size: 10px;
+}
+
+.photo-detail a {
+    font-size: 10px;
+}
+
+/* Quote Section */
+
+#quote {
+    background-color: rgb(19, 121, 19);
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+#quote .content {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
 }
 
 /* Mobile Styles */
@@ -258,6 +291,25 @@ a {
 @media screen and (max-width: 800px) {
     .banner .content {
         padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 880px) {
+
+    .services-tabs {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .service {
+        width: auto;
+        margin: 1em 2em 0;
+    }
+
+    .service-information h3 {
+        text-align: center;
+        margin: 0;
+        padding: 1em;
     }
 }
 
