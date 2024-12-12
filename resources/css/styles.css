@@ -360,6 +360,45 @@ input[type=text] {
     background-color: red;
   }
 
+  /* Footer Section */
+
+  footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid red;
+  }
+
+  footer .logo img {
+    margin: 12px 14px;
+  }
+
+  #contact h4 {
+    color: red;
+    font-size: 18px;
+  }
+
+  #contact {
+    width: 50%;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer li {
+    margin-bottom: 10px;
+  }
+
+  .social h4 {
+    color: red;
+    font-size: 18px;
+  }
+
 /* Mobile Styles */
 
 @media screen and (max-width: 600px) {
