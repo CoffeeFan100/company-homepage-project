@@ -483,6 +483,10 @@ input[type=text] {
     .closing p {
         font-size: 11px;
     }
+
+    .banner .content {
+        opacity: 0.8;
+    }
 }
 
 @media screen and (max-width: 320px) {
