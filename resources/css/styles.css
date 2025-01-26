@@ -491,7 +491,7 @@ input[type=text] {
 
 @media screen and (max-width: 320px) {
     .closing p {
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 
@@ -552,6 +552,7 @@ input[type=text] {
     .services-tabs {
         flex-direction: column;
         align-self: center;
+        padding: 32px 20px;
     }
 
     .service {
